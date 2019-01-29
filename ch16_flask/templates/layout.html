@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<!--THIS BIT CAN BE USED TO LINK A CSS SHEET IF NEEDED
+<link rel="stylesheet" href="{{url_for("static", filename="css/main.css")}}">-->
+  <title>{{title}}</title>
+</head>
+<body>
+ <a href="{{ url_for('about')}}">About</a>
+ <a href="{{ url_for('index')}}">Index</a> 
+{% block content %}
+{% endblock %}
+</body>
+</html>
